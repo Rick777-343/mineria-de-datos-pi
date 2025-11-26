@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ricardo Ruiz Almaguer">
+  <meta name="description" content="Producto integrador. Proyecto final de mineria de datos">
+  <meta name="keywords" content="Producto integrador. Proyecto final de mineria de datos">
+  <title>Proyecto final</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Proyecto final de minería de datos</div>
+    <ul class="nav-links">
+      <li><a href="#base">Base teórica</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+    </ul>
+    <!-- Botón hamburguesa -->
+    <div class="hamburger">&#9776;</div>
+  </nav>
+
+<h1 class="main-title">Análisis de información y minería de datos para la toma de decisiones</h1>
+
+  <!-- Sección de base teórica-->
+   <div class="texto">
+  <section id="base">
+    <h2>Sociedad de la información</h2>
+    <p>Es aquella en la cual las tecnologías que facilitan la creación, distribución y manipulación de la información juegan un papel importante en las actividades sociales, culturales y económicas debe estar centrada en la persona, integradora y orientada al desarrollo, en que todos puedan crear, consultar, utilizar y compartir la información y el conocimiento, para que las personas, las comunidades y los pueblos puedan emplear plenamente sus posibilidades en la promoción de su desarrollo sostenible y en la mejora de su calidad de vida.</p>
+    <h2>Inteligencia de negocios</h2>
+    <p>También conocida como Business Intelligence o BI, es un conjunto de estrategias y procesos que se realizan para recopilar, procesar y analizar datos, además de que permite interpretarlos para convertirlos en información valiosa o de gran utilidad para las empresas. Pues su objetivo es identificar oportunidades, predecir tendencias y evitar problemas dentro de la gestión de la información. </p>
+    <h2>OLAP</h2>
+    <p>Significa procesamiento analítico en línea y es una tecnología que proporciona software cuyo propósito es hacer consultas complejas a una alta velocidad y en grandes cantidades de datos, ayudando a crear informes y pronósticos para uso comercial.
+      Por lo general las empresas recopilan y almacenan datos de varias fuentes de datos, como sitios web o aplicaciones para después combinar y agrupar esos datos en categorías y proporcionar información procesable para planificar estrategias.
+    </p>
+    <h2>Minería de datos</h2>
+    <p>Es una técnica que consiste en el análisis y procesamiento de grandes cantidades de datos. Esto con el objetivo de descubrir patrones y relaciones entre los datos, transformándolos en conocimiento práctico para las empresas, las cuales usan la minería de datos para analizar el comportamiento de los consumidores para los equipos de marketing o ventas, y así resolver problemas, analizar consecuencias futuras antes de tomar decisiones empresariales y aumentar el margen de beneficio.</p>
+    <h2>¿Qué es el proceso de KDD (Minería de datos)?</h2>
+    <p>El Knowledge Discovery in Databases es una serie de pasos, cuyo procedimiento es utilizado para llevar a cabo la extracción automatizada de conocimiento partiendo de grandes volúmenes de datos, el cual es de naturaleza iterativa, por lo tanto, es aplicable tantas veces como sea necesario hasta obtener la información necesaria.
+      Cabe mencionar que la finalidad del KDD es la interpretación de patrones, modelos y un profundo análisis de la información que una organización ha reunido para así tomar mejores decisiones, por lo que la convierte en una gran herramienta de investigación.
+    </p>
+    <h3>Etapas del KDD</h3>
+    <h3>1.	Integración y recopilación</h3>
+      <ul>
+        <li>Recopilación: se obtienen datos de diferentes fuentes integrándose en un único reposito de llamado data warehouse, aparte de la información interna de la organización, se puede recopilar e integrar información de fuentes externas. Los datos deben guardarse de forma segura y confiable, además los almacenes pueden ser físicos o lógicos.</li>
+        <li>Integración: los datos suelen provenir de múltiples fuentes, cada una con su propio formato y estructura. Este paso fusiona estos datos en un conjunto unificado, garantizando la coherencia y reduciendo la redundancia.</li>
+      </ul>
+      <h3>2.	Selección, limpieza y transformación</h3>
+        <ul>
+          <li>Selección: como no todos los datos son relevantes para cada análisis, aquí, se seleccionará el subconjunto de datos correspondiente a su objetivo específico, esto mediante técnicas de filtrado de registros y de atributos.</li>
+          <li>Limpieza: implica eliminar cualquier inconsistencia, error o valor atípico que pueda distorsionar los resultados.</li>
+          <li>Transformación: es resumir, agregar o transformar de otro modo los datos para que sean adecuados para la minería y que puedan ser utilizados.</li>
+        </ul>
+      <h3>3.	Minería de datos</h3>
+      <ul>
+        <li>Se extraen patrones, tendencias y relaciones de los datos mediante diversos algoritmos y técnicas. Permitiendo extraer conclusiones a partir de datos analizados de manera cómoda y eficaz.</li>
+      </ul>
+      <h3>4.	Evaluación e interpretación</h3>
+      <ul>
+        <li>Evaluación: ayuda a filtrar, garantizando que solo se consideren las ideas valiosas pues no todos los patrones son útiles ni interesantes.</li>
+        <li>Interpretación: los datos son analizados y evaluados para convertirse en conocimiento.</li>
+      </ul>
+      <h3>5.	Difusión y uso</h3>
+      <ul>
+        <li>Difusión: el conocimiento se distribuye a los usuarios que pertenecen a una organización, quienes lo comparten, esto mediante visualizaciones, informes u otros medios para que el conocimiento sea accesible y comprensible.</li>
+        <li>Uso: se toman decisiones basadas en los conjuntos de datos obtenidos para utilizarlos e implementarlos en sistemas u otras situaciones.</li>
+      </ul>
+
+    <h2>Tareas y técnicas de minería de datos</h2>
+    <table class="tabla-base">
+      <thead>
+        <tr>
+          <th>Técnicas</th>
+          <th>Descripción</th>
+          <th>Pertenece a</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Asociación</td>
+          <td>Implica buscar ciertas ocurrencias con atributos conectados. La idea es buscar variables vinculadas en función de atributos o eventos específicos.
+          Se usan reglas, donde una regla de asociación es un método basado en reglas si/entonces para encontrar relaciones entre variables en un conjunto de datos.
+          </td>
+          <td>Categorización</td>
+        </tr>
+        <tr>
+          <td>Clasificación</td>
+          <td>Utilizada para derivar datos relevantes y metadatos basado en un atributo definido.
+            Se predefinen clases de objetos, según las necesidades de la organización, con definiciones de las características que los objetos tienen en común. 
+            Esto permite agrupar los datos subyacentes para facilitar su análisis.
+          </td>
+          <td>Clasificación y Categorización</td>
+        </tr>
+        <tr>
+          <td>Agrupación</td>
+          <td>Ayuda en el descubrimiento de conocimientos, la detección de anomalías y la obtención de información sobre la estructura interna de los datos.
+            Por lo que informa de similitudes, pero también proporciona más agrupaciones basadas en diferencias.
+          </td>
+          <td>Categorización</td>
+        </tr>
+        <tr>
+          <td>Árbol de decisión</td>
+          <td>
+            Utiliza el análisis de clasificación o regresión para clasificar o predecir posibles resultados en función de un conjunto de decisiones. Como sugiere el nombre del árbol de decisión, utiliza una visualización similar a un árbol para representar los posibles resultados de estas decisiones.
+            Además, se centra en las relaciones de modelado de entrada y salida mediante reglas si/entonces.
+          </td>
+          <td>Clasificación, Categorización y Predicción</td>
+        </tr>
+        <tr>
+          <td>Análisis de regresión</td>
+          <td>Descubre relaciones en los datos mediante la predicción de resultados basados en variables predeterminadas. Esto puede incluir árboles de decisión y regresión lineal multivariada.</td>
+          <td>Predicción</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Herramientas ETL</h2>
+    <p>Son las siglas de Extract Transform Load, que significan extraer, transformar, cargar. Por lo que es un proceso de integración de datos que combina, limpia y organiza datos de múltiples fuentes en un único conjunto de datos coherente para su almacenamiento en un almacén de datos u otro sistema de destino.
+      Esto con el fin de hacer frente a las necesidades específicas de inteligencia de negocios, tales como reportes mensuales, pero también puede abordar análisis más avanzados, que pueden mejorar los procesos de back-end y las experiencias de los usuarios finales.
+    </p>
+    <h3>Ejemplos</h3>
+    <h3>MOLAP</h3>
+      <ul>
+        <li>Significa Procesamiento Analítico Multidimensional en Línea., el cual utiliza un cubo multidimensional que accede a los datos almacenados mediante diversas combinaciones. Los datos se pre calculan, se resumen previamente y se almacenan. Pues procesa datos que ya están almacenados en una colección multidimensional en la que se reflejan todas las combinaciones posibles de datos y se puede acceder directamente a cada una de ellas.</li> 
+        <li>Ejemplo: Microsoft SSAS admite consultas complejas y grandes conjuntos de datos con opciones ROLAP y MOLAP. Analysis Services es un motor de datos analíticos (VertiPaq) que se usa en el soporte de decisiones y el análisis empresarial. Proporciona funcionalidades del modelo de datos semántico de nivel empresarial para inteligencia empresarial (BI), análisis de datos y aplicaciones de informes como Fabric/Power BI, Excel, Reporting Services y otras herramientas de visualización de datos.</li>
+      </ul>
+    <h3>Data Warehouse</h3>
+      <ul>
+        <li>Es un sistema que agrega datos de varias fuentes en un único almacén de datos central y coherente. Los almacenes de datos ayudan a preparar los datos para las iniciativas de análisis de datos, business intelligence (BI), minería de datos, machine learning (ML) e inteligencia artificial (IA).
+          Estos pueden ingerir grandes cantidades de datos de una amplia gama de sistemas de origen, incluidas bases de datos operativas, sistemas transaccionales y plataformas de gestión de relaciones con los clientes (CRM). Las herramientas de analytics de autoservicio permiten a los usuarios empresariales explorar y analizar estos datos para obtener insights valiosos.
+        </li>
+        <li>Ejemplo: Oracle Independent Data Warehouse (ADW) es un servicio de almacenamiento de datos basado en la nube ofrecido por Oracle Corporation. Está diseñado para simplificar las tareas de análisis y gestión de datos mediante la automatización de muchos de los procesos tradicionalmente complejos y lentos asociados con el almacenamiento de datos.</li>
+      </ul>
+    <h3>DataMarts</h3>
+    <ul>
+      <li>Es un sistema de almacén de datos que contiene información específica de la unidad empresarial de una organización. Contiene una parte pequeña y específica de los datos que la empresa almacena en un sistema de almacenamiento más grande. 
+        Las empresas utilizan un data mart para analizar la información específica de cada departamento de manera más eficiente. Brinda datos resumidos que las partes interesadas clave pueden utilizar para tomar decisiones informadas rápidamente.
+      </li>
+      <li>Ejemplo: Oracle Autonomous Database impulsa los data marts en la nube con una solución completa y de autoservicio que permite a los equipos empresariales obtener la información profunda, fiable y basada en datos que necesitan para tomar decisiones rápidas.</li>
+    </ul>
+    <h2>Vista minable</h2>
+    <p>Es una vista de datos materializada que recoge toda la información necesaria para realizar una tarea de minería.</p>
+    <h2>Herramientas de minería de datos</h2>
+    <p>Son software que ayudan a los usuarios a descubrir patrones, tendencias y relaciones dentro de grandes cantidades de datos. Vienen en diversas formas, desde simples hasta complejas. Por ejemplo:</p>
+    <h3>RapidMiner</h3>
+    <p>Permite diseñar procesos de minería de datos a través de un sistema visual y es muy popular en entornos académicos y profesionales.</p>
+    <h3>KNIME</h3>
+    <p>Destaca por ser de código abierto y altamente flexible. Su ventaja principal es que se puede integrar con poco esfuerzo con otras soluciones. Es muy interesante para proyectos de modelado de datos en entornos empresariales.</p>
+    <h3>Weka</h3>
+    <p>Cuenta con un conjunto de algoritmos de aprendizaje automático que facilitan la experimentación y la comparación de modelos.</p>
+    <h2>Técnicas de minería de datos</h2>
+    <p>Las técnicas de minería de datos se basan en varios campos de aprendizaje que se entrelazan, como el análisis estadístico, el machine learning y las matemáticas.</p>
+  </section>
+
+  <!-- Sección de resultados -->
+  <section id="resultados">
+    <h2>Resultados</h2>
+    <h3>Contexto</h3>
+    <p>El Taller de Zapatos Viena, ubicado en León, Guanajuato, se encuentra en proceso de transformación digital con el objetivo de optimizar sus operaciones, mejorar la trazabilidad de sus procesos y facilitar la toma de decisiones estratégicas. Como parte de esta iniciativa, se han digitalizado procesos clave como el registro de pedidos, control de inventario, facturación, comunicación interna y capacitación del personal.</p>
+    <p>Y para aprovechar al máximo los datos generados por los sistemas se propone la creación de un almacén de datos que centralice, estructure y preserve la información operativa del taller, permitiendo aplicar técnicas de minería de datos para descubrir patrones, tendencias y oportunidades de mejora, así como la capacidad de adaptación del negocio.</p>
+    <h3>Vista minable</h3>
+    <p>Se tiene la siguiente vista minable del taller de zapatos</p>
+    <div class="galeria">
+      <img src="./img/vista_minable.png" alt="vista-minable-excel">
+    </div>
+    <h3>Herramienta KNIME</h3>
+    <p>Con la herramienta KNIME se pueden usar estos nodos</p>
+    <div class="galeria">
+      <img src="./img/knime_nodos1.png" alt="">
+    </div>
+    <h3>Resultados estadísticos</h3>
+    <p>Se pueden obtener los siguientes resultados como el mínimo, máximo, media, mediana o desviación</p>
+    <div class="galeria">
+      <img src="./img/min-max-media.png" alt="minimo-maximo">
+    </div>
+    <h3>Gráficas</h3>
+    <p>Gráfica entre los productos y la cantidad</p>
+    <div class="galeria">
+      <img src="./img/grafica-productos-cantidad-azul.png" alt="grafica-productos-cantidad">
+    </div>
+    <h3>Categorización</h3>
+    <p>Se utilizó la categorización y los árboles de decisión mediante los siguientes nodos</p>
+    <div class="galeria">
+      <img src="./img/nodos-arbol.png" alt="nodos-arbol">
+    </div>
+    <h3>Rango de estado sobre los pedidos</h3>
+    <p>Dando como resultado los siguientes rangos sobre el estado de los pedidos</p>
+    <div class="galeria">
+      <img src="./img/tabla-rango-estado.png" alt="tabla-rangos-de-estado">
+    </div>
+    <h3>Árbol de decisiones</h3>
+    <div class="galeria">
+      <img src="./img/arbol2.png" alt="esquema-arbol">
+    </div>
+          <h3>Nodo raíz En Proceso <= …</h3>
+      <ul>
+        <li>Este es el primer punto de decisión, pues el árbol divide los pedidos según el valor de la variable En proceso, lo que indica que este atributo tiene alta importancia predictiva.</li>
+      </ul>
+      <h3>Ramas y nodos intermedios</h3>
+      <ul>
+        <li>Se utilizan atributos como en proceso, cancelado o pendiente, para seguir dividiendo los datos.</li>
+        <li>Cada división busca generar grupos más homogéneos en cuanto al estado final del pedido.</li>
+      </ul>
+      <h3>Hojas de nodos terminales</h3>
+      <ul>
+        <li>Cada hoja muestra una tabla con la distribución de estados:</li>
+        <ul>
+          <li>Entregado</li>
+          <li>En proceso</li>
+          <li>Cancelado</li>
+          <li>Pendiente</li>
+        </ul>
+      </ul>
+    <h3>Nodos de predicción</h3>
+    <div class="galeria">
+      <img src="./img/nodos-prediccion.png" alt="nodos-prediccion">
+    </div>
+    <br>
+    <p>Se puede obtener una predicción sobre la cantidad de los productos</p>
+    <div class="galeria">
+      <img src="./img/prediccion-cantidad-productos.png" alt="tabla-predicciones-cantidad"">
+    </div>
+    <h2>Conclusión</h2>
+    <ul>
+      <li>Con esta información se puede hacer una segmentación para identificar qué combinaciones de atributos llevan a estados como Pendiente o Cancelado.</li>
+      <li>También se puede predecir un estado si se tiene un nuevo pedido con ciertos valores como en proceso y así estimar su estado probable.</li>
+      <li>Además, se puede optimizar para saber si ciertos caminos llevan frecuentemente a Cancelado, esto con el objetivo de revisar esos procesos para mejorar.</li>
+      <li>Además, la tabla de rango muestra cómo se distribuyen las predicciones de estado (Cancelado, En proceso, Entregado, Pendiente) según el tipo de calzado. Esto permite identificar patrones como el tipo de producto que tiene más entregas exitosas.</li>
+      <li>La tabla también muestra cómo se comportan los estados según la marca, lo que ayuda a detectar proveedores con mayor riesgo de cancelación o retraso.</li>
+      <li>También se obtuvieron las predicciones de la cantidad de productos del taller, pues si la predicción supera la cantidad actual, entonces se puede anticipar necesidad de fabricación. Y así detectar productos con un sobre stock o riesgo de desabasto.</li>
+    </ul>
+  </section>
+   </div>
+  <!-- Sección de Referencias -->
+<section id="referencias">
+  <h2>Referencias</h2>
+  <ul class="lista-referencias">
+    <li>Astera Marketing. (5 de marzo de 2025). Las 15 mejores herramientas ETL en 2025 para la integración escalable de datos. Obtenido de Astera: https://www.astera.com/es/knowledge-center/what-is-etl-tool/</li>
+    <li>AWS. (s.f.). ¿Qué es extracción, transformación y carga (ETL)? Obtenido de aws: https://aws.amazon.com/es/what-is/etl/</li>
+    <li>Cabrera, E. H. (18 de diciembre de 2023). 10 - KNIME: predicción. Obtenido de YouTube: https://youtu.be/Erg84A2OXR4?si=Yt7KRzslYfWLIOV8</li>
+    <li>Narea 21. (6 de septiembre de 2015). Mineria de Datos con Knime. Obtenido de YouTube: https://youtu.be/0UlS1d9YKXE?si=nrp1fysxPIstZMwg</li>
+    <li>Druetta, D. (Diciembre de 2005). La sociedad de la información: una mirada desde la comunicación. Obtenido de https://www.revistaciencia.amc.edu.mx/images/revista/56_4/la_sociedad.pdf</li>
+    <li>El rincón de JMACOE. (17 de septiembre de 2024). 5 de los mejores software de minería de datos de Código Libre y Abierto. Obtenido de El rincón de JMACOE: http://blog.jmacoe.com/gestion_ti/base_de_datos/5-mejores-software-mineria-datos-codigo-libre-abierto/</li>
+    <li>fbombab (Fernando Bomba B). (28 de septiembre de 2023). ÁRBOL DE DECISIONES con KNIME / ANÁLISIS de CLASIFICACIÓN / ÁRBOL de DECISIONES EJEMPLOS RESUELTOS. Obtenido de YouTube: https://www.youtube.com/watch?v=W5rIeOsOxxI&list=PLYqPCyWfFHmb-Bb5nBrDBQF_h73ATdll7&index=8</li>
+    <li>fbombab (Fernando Bomba B). (27 de marzo de 2023). Instalar EXTENSIONES KNIME / INSTALAR EXTENSIONS Knime / Knime DOWNLOAD / CURSO KNIME. Obtenido de YouTube: https://youtu.be/rBx__jnkoz4?si=zooQLLQJnDpTD4w6</li>
+    <li>fbombab (Fernando Bomba B). (23 de marzo de 2023). INSTALAR KNIME / DESCARGAR Knime / Knime DOWNLOAD / CURSO KNIME ESPAÑOL / Cómo instalar KNIME. Obtenido de YouTube: https://youtu.be/zhSNWQwSU30?si=roJfzq5UXZLTK-Fe</li>
+    <li>fbombab (Fernando Bomba B). (4 de abril de 2023). K-MEANS SEGMENTACIÓN con KNIME / K-MEANS CLUSTERING / Segmentación NO JERÁRQUICA K-MEANS/CURSO KNIME. Obtenido de YouTube: https://youtu.be/Uu7t90GX_u4?si=g2RqB191eULMQg4i</li>
+    <li>Herrera, J. C. (8 de julio de 2020). KNIME - 04 Segmentación Estadística. Obtenido de YouTube: https://youtu.be/DAxP-r9H4zw?si=65RvpQvH0zlmMPjX</li>
+    <li>IBM. (s.f.). ¿Qué es OLAP (procesamiento analítico en línea)? Obtenido de IBM: https://www.ibm.com/mx-es/think/topics/olap</li>
+    <li>IBM. (10 de enero de 2025). ¿Qué es ETL (extracción, transformación, carga)? Obtenido de IBM: https://www.ibm.com/mx-es/think/topics/etl</li>
+    <li>Infolaft SARLAFT SAGRILAFT. (30 de enero de 2015). Minería de datos: introducción a Knime, Cluster y árboles de clasificación. Obtenido de YouTube: https://youtu.be/uvmhMKrwzxg?si=X_lcAO-K45UNEA7m</li>
+    <li>Jubeen, M. (15 de julio de 2020). Statistics( min, max median with hitogram) in KNIME. Obtenido de YouTube: https://youtu.be/hgMUvenLfzg?si=NmkYKhZLfcDJr1ZJ</li>
+    <li>Kannan, S. (26 de septiembre de 2022). Know Your Data with Descriptive Statistics in KNIME. Obtenido de KNIME: https://www.knime.com/blog/know-your-data-descriptive-statistics</li>
+    <li>KNIME. (s.f.). KNIME Extensions. Obtenido de KNIME: https://forum.knime.com/c/knime-extensions/27</li>
+    <li>Microsoft Learn. (31 de octubre de 2023). Algoritmos de minería de datos (Analysis Services: Minería de datos). Obtenido de Microsoft Learn: https://learn.microsoft.com/es-es/analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining?view=asallproducts-allversions</li>
+    <li>Ministerio de Tecnologías de la Información y las Comunicaciones. (2021). Sociedad de la Información. Obtenido de https://mintic.gov.co/portal/inicio/Glosario/S/5305:Sociedad-de-la-Informacion</li>
+    <li>Oracle. (18 de junio de 2021). ¿Qué es ETL? Tu guía para los aspectos esenciales de la integración de datos. Obtenido de OCI: https://www.oracle.com/mx/integration/what-is-etl/</li>
+    <li>Oracle. (8 de junio de 2023). ¿Qué es un almacén de datos? Obtenido de Oracle: https://www.oracle.com/mx/database/what-is-a-data-warehouse/</li>
+    <li>Ortega, C. (9 de marzo de 2024). Técnicas de minería de datos: Qué es e importancia. Obtenido de QuestionPro: https://www.questionpro.com/blog/es/tecnicas-de-mineria-de-datos/</li>
+    <li>Pérez Zúñiga, R., Mercado Lozano, P., Martínez García, M., Mena Hernández, E., & Partida Ibarra, J. Á. (2018). La sociedad del conocimiento y la sociedad de la información como la piedra angular en la innovación tecnológica educativa. Obtenido de https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2007-74672018000100847</li>
+    <li>Quinteros, O. E., Funes, A., & Ahumada, H. C. (2016). Construcción de una Vista Minable para aplicar Mineria de Datos Secuenciales Temporales. Obtenido de SEDICI: https://sedici.unlp.edu.ar/bitstream/handle/10915/56747/Documento_completo.pdf-PDFA.pdf?sequence=1&isAllowed=y</li>
+    <li>Redator Rock Content. (5 de Agosto de 2019). ¿Qué es la Sociedad de la Información y cómo se estructura? Obtenido de https://rockcontent.com/es/blog/sociedad-de-la-informacion/</li>
+    <li>SAP. (s.f.). ¿Qué es un almacén de datos? Obtenido de https://www.sap.com/latinamerica/products/technology-platform/datasphere/what-is-a-data-warehouse.html</li>
+    <li>Sisense. (s.f.). OLAP, ROLAP, MOLAP, HOLAP. Obtenido de sisense: https://www.sisense.com/glossary/olap/</li>
+    <li>TeoCom. (12 de Diciembre de 2022). Características de la SOCIEDAD de la INFORMACIÓN. Obtenido de https://www.youtube.com/watch?v=eXxRK0-r6Fk</li>
+    <li>Tuinsti. (14 de mayo de 2020). Introducción a Knime Analytics para minería de datos. Obtenido de YouTube: https://youtu.be/5DnTRqJS19c?si=HZxvt-UAz2ryEFoe</li>
+    <li>Vilca, E. (16 de septiembre de 2018). Arboles de Decision Knime. Obtenido de YouTube: https://www.youtube.com/watch?v=mSNdlSpm2S0</li>
+  </ul>
+</section>
+
+<!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 UDG VIRTUAL. Todos los derechos reservados.</p>
+    <p>Diseñado por Ricardo Ruiz Almaguer</p>
+  </footer>
+  <script src="./js/funciones.js"></script>
+</body>
+</html>

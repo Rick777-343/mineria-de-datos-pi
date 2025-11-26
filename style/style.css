@@ -1,0 +1,274 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #0e8ce0;
+  font-weight: bold;
+}
+
+/* Botón hamburguesa (oculto en escritorio) */
+.hamburger {
+  display: none;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+/* Ajuste para que el contenido no quede oculto detrás del navbar */
+section {
+  padding: 100px 20px 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: justify;
+        background-image: linear-gradient(135deg
+    , #00b7d4, #505488, #2f3f80,
+     #161569, #5a4894, #a950a1, #ff7cae);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+.texto{
+    color: white;
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.main-title {
+  margin-top: 100px;   /* espacio para que no quede debajo del navbar fijo */
+  text-align: center;
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+h2{
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+ul {
+  margin-left: 40px;
+  list-style-type: disc; /* viñetas normales */
+}
+
+ul ul {
+  margin-left: 20px;
+  list-style-type: circle; /* viñetas diferentes para subtemas */
+}
+
+.tabla-base {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabla-base th,
+.tabla-base td {
+  border: 2px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+.tabla-base th {
+  background-color: #444;
+  color: white;
+}
+
+.tabla-base tr:nth-child(even) {
+  background-color: #555; /* gris más oscuro */
+}
+
+.tabla-base tr:nth-child(odd) {
+  background-color: #333; /* aún más oscuro */
+}
+
+
+.tabla-base td:nth-child(2),
+.tabla-base th:nth-child(2) {
+  width: 50%; 
+}
+
+.tabla-base td:nth-child(1),
+.tabla-base th:nth-child(1) {
+  width: 25%; 
+}
+
+.tabla-base td:nth-child(3),
+.tabla-base th:nth-child(3) {
+  width: 25%; 
+}
+
+.tabla-base td:nth-child(2){
+   text-align: justify;
+}
+
+.tabla-base th {
+  background-color: #444;
+  color: white;
+}
+
+.tabla-base tr:nth-child(even) {
+  background-color: #2c2b28; /* filas pares con color distinto */
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;   /* permite que las imágenes salten a la siguiente línea */
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 900px;      /* tamaño por defecto en escritorio */
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  border-color: #ffcc00;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .galeria {
+    flex-direction: column; /* apila las imágenes verticalmente */
+    align-items: center;
+  }
+
+  .galeria img {
+    width: 100%;  /* cada imagen ocupa todo el ancho disponible */
+    max-width: 400px; /* opcional: límite para que no se estiren demasiado */
+  }
+}
+
+#referencias {
+  margin: 40px 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #333;
+}
+
+#referencias h2 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.lista-referencias {
+  margin-left: 20px;
+}
+
+.lista-referencias li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.lista-referencias a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.lista-referencias a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
